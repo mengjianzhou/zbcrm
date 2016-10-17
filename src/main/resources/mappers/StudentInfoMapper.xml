@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace和定义的Mapper接口对应，并实现其中的方法 -->
+<mapper namespace="com.robert.mappers.StudentMapper">
+
+	<!--查询所有学生信息-->
+	<select id="getStudentInfo" resultType="studentInfo">
+		select * from tb_student_info
+	</select>
+	
+</mapper>
